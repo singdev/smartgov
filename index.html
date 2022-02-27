@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./assets/smartgov.png">
+    
     <!-- Own style -->
     <link rel="stylesheet" href="./styles/button.css">
     <link rel="stylesheet" href="./styles/color.css">
@@ -45,10 +48,10 @@
         <button onclick="toggleMenu()" class="bg-trans color-white">
           <i class="fa-solid fa-bars text-p12"></i>
         </button>
-        <a href="#">A propos</a>
-        <a href="#">Le programme</a>
-        <a href="#">Les étapes</a>
-        <a href="#">Documentation</a>
+        <a href="#about">A propos</a>
+        <a href="#programme">Le programme</a>
+        <a href="#etape">Les étapes</a>
+        <a href="#documentation">Documentation</a>
       </nav>
     </header>
 
@@ -69,16 +72,20 @@
           acteurs pour régler les problématiques nationales par le numérique</span>
         <div class="flex gap1 action-container flex-wrap flex1-center
           flex2-center">
-          <a href="#" class="button curve-button border-color-secondary
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLScQ54ptzIxgRIr9gY7p2adV5kP_2n_q9Tsux3sH3Vh4jo5lzA/viewform?usp=sf_link"
+            class="button curve-button border-color-secondary
             shadow-black bg-secondary color-black">Soumettre un projet</a>
-          <a href="#" class="button curve-button outline-button">Soumettre une
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfEizILgumMHnQnQacfdXJdvhc_AwKeDr_W1LEMeO8MG_saUA/viewform?usp=sf_link"
+            class="button curve-button outline-button">Soumettre une
             problématique</a>
         </div>
       </div>
 
       <!-- SECTION ABOUT -->
-      <div class="about-section flex flex-wrap">
-        <div class="about pad2 bg-white margin2">
+      <div class="about-section flex flex-wrap" id="about">
+        <div class="about pad1 bg-white margin2">
           <div class="section-title">
             <span>A propos de SmartGov</span>
             <div class="divider bg-black"></div>
@@ -100,19 +107,21 @@
 
             <span class="text-p text-align-justify">
               Cette digialisation du pays a profité aux entreprises privées qui
-              ont pu développer de nouvelles solution permettant de facilité le
+              ont pu développer de nouvelles solutions permettant de facilité le
               quotidien des populations et améliorer considérablement la vie des
-              gabonais. Cependant les services de l'administration on très peux
-              évolués, très peux de solution innovante sont développés
-              régulièrement pour améliorer la performances de nos
-              administration, la qualité des services aux usagers et la sécurité
+              gabonais. Cependant les services de l'administration public ont
+              très peu
+              évolués. Très peu de solutions innovantes sont développées
+              régulièrement pour améliorer la performance de nos
+              administrations, la qualité des services aux usagers et la
+              sécurité
               des informations.
             </span>
 
             <div class="margin1"></div>
 
             <span class="text-p text-align-justify">
-              Pour cela le programme SMARTGOV vient compléter le programme eGov
+              Pour cela le programme SmartGov vient compléter le programme eGov
               pour permettre la création de plus en plus de startup d'état,
               c'est à dire, des startups développés par les fonctionnaires qui
               comprennent mieux les problématiques de l'administration public
@@ -123,7 +132,7 @@
             <div class="margin1"></div>
 
             <span class="text-p text-align-justify">
-              Pour cela le programme SMARTGOV mets en place trois éléments:
+              Pour cela le programme SmartGov mets en place trois éléments:
             </span>
 
             <div class="margin1"></div>
@@ -148,7 +157,7 @@
 
 
       <!-- SECTION PROGRAMME -->
-      <div class="programme-section">
+      <div class="programme-section" id="programme">
         <div class="pad1 bg-primary">
           <div class="section-title">
             <span class="color-white">Les éléments du programme SmartGov</span>
@@ -164,7 +173,7 @@
             <div class="text-p text-bold color-primary pad1 text-upper">SmartGov
               MeetUp</div>
             <div class="text-p text-align-center">
-              : il s'agit de réunions organisées en présentiel ou distanciel
+              Il s'agit de réunions organisées en présentiel ou en distanciel
               (ateliers, rencontres, formations, panels). Notamment des
               formations des fonctionnaires sur des outils numériques ; des
               présentations de produits, solutions des acteurs privés pour
@@ -180,7 +189,7 @@
               SmartGov</div>
             <div class="text-p text-align-center">
               Son objectif est de pouvoir identifier et structurer (idéation -
-              structuration - prototypage) des projets innovants qui vise à
+              structuration - prototypage) des projets innovants qui visent à
               rendre l'administration intelligente et améliorer les services
               aux usagers. Le Hackathon s'étale sur 2 à 3 jours
             </div>
@@ -195,7 +204,7 @@
               d'incubation
               Startup d'état</div>
             <div class="text-p text-align-center">
-              Programme d'Incubation Startup d'Etat : son objectif est de
+              Son objectif est de
               faire maturer les différents projets qui seront primés suite au
               Hackathon. (Adoption - déploiement - financement) ; Le programme
               s'exécute sur une période de 6 mois à 1 an. Pour cette première
@@ -214,7 +223,7 @@
       <!-- Divider End -->
 
       <!-- SECTION ETAPE DU PROGRAMME  -->
-      <div class="etape-section pad1 bg-white">
+      <div class="etape-section pad1 bg-white" id="etape">
         <div class="margin2"></div>
 
         <div class="pad1 flex flex1-center">
@@ -241,9 +250,11 @@
               <span class="text-p pad1 text-align-center">
                 L'appel à projet durera 2 mois à partir du 28 février 2022.
                 Pendant cette période vous pourrez vous inscrire en remplissant
-                le formulaire sur le site
+                le formulaire de soumission de projet disponible sur le site officiel du programme SmartGov
               </span>
-              <a href="#" class="button curve-button shadow-white bg-secondary
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLScQ54ptzIxgRIr9gY7p2adV5kP_2n_q9Tsux3sH3Vh4jo5lzA/viewform?usp=sf_link"
+                class="button curve-button shadow-white bg-secondary
                 color-black">Postuler maintenant</a>
             </div>
           </div>
@@ -253,19 +264,19 @@
             <div class="step-top border-color-accent flex flex-column
               flex2-center flex1-end pad1">
               <span class="text-p pad1 text-align-center">
-                Pendant les deux mois de l'appel à projet il y'au des session
-                d'information en ligne et en présentiel. Ainsi que des journée
-                de formation au modèle économique dans les différente
-                administration
+                Pendant les deux mois de l'appel à projet il y'aura des sessions
+                d'informations en ligne et en présentiel. Ainsi que des journées
+                de formation au modèle économique dans les différentes
+                administrations
               </span>
               <ul class="pad1 margin1 bg-ligth1 flex flex-column gap05">
                 <li>
                   <strong>15 avril et 15 mars</strong> - Session d'information
-                  en presentiels à la SING
+                  en presentiel à la SING
                 </li>
                 <li>
                   <strong>Avril et Mars</strong> - Programmation de 2 sessions
-                  par mois en Live sur Facebook
+                  par mois de Live sur Facebook
                 </li>
               </ul>
               <span class="text-p10 text-bold text-align-center">Sessions
@@ -293,8 +304,8 @@
               <div class="pad1"></div>
               <span class="text-p pad1 text-align-center">
                 A la fin de l'appel à projet le 28 Avril 2022, 10 projets seront
-                sélectionnées partie toutes les candidatures pour défendre leur
-                projet devant un jury pour faire partie de 5 startups qui
+                sélectionnées parmi toutes les candidatures pour défendre leur
+                projet devant un jury pour faire partie des 5 startups qui
                 participerons au hackathon
               </span>
               <ul class="pad1 margin1 bg-ligth3 flex flex-column gap05">
@@ -306,7 +317,7 @@
                 </li>
                 <li>
                   <strong>04 Mai 2022</strong> - Annonce de présélection des 10
-                  projes
+                  projets
                 </li>
                 <li>
                   <strong>06 au 09 Mai 2022</strong> - Audition des
@@ -369,9 +380,9 @@
               <span class="text-p pad1 text-align-center">
                 A l'issu du pitch final de la journée 3 du hackathon, un seul
                 projet sera primé. Ce dernier recevra un financement d'une
-                valeur 1,000,000 FCFA pour le développement de son projet ainsi
+                valeur de 1,000,000 FCFA pour le développement de son projet ainsi
                 que un accompagnement de la Société d'Incubation Numérique du
-                Gabon (SING SA) dans le cadre du programme Startup^d'Etat
+                Gabon (SING SA) dans le cadre du programme Startup d'Etat
               </span>
             </div>
           </div>
@@ -381,12 +392,11 @@
             <div class="step-top border-color-accent flex flex-column
               flex2-center flex1-end pad1">
               <span class="text-p pad1 text-align-center">
-                La session d'integration du Laureat au programme d'incubation
-                startup dl'Etat se fera le 31 Mai 2022; Et se terminéra le 30
+                La session d'intégration du Lauréat au hackathon se fera le 31 Mai 2022; Et se terminera le 30
                 aout 2022 par un demoday au cours duquel la startup fera une
-                présentation du niveau de matiration de son projet suite à
+                présentation du niveau de maturation de son projet suite à
                 l'accompagnement et pourra convaincre ainsi un ensemble
-                d'investisseur potentiel pour aller plus loin
+                d'investisseur potentiel pour aller plus loin dans son projet
               </span>
               <span class="text-p10 text-bold text-align-center">Incubation</span>
               <div class="pad1"></div>
@@ -409,7 +419,8 @@
       <!-- Divider End -->
 
 
-      <footer class="bg-sing color-white pad2 flex flex-column">
+      <footer class="bg-sing color-white pad2 flex flex-column"
+        id="documentation">
         <div class="flex flex-column flex2-start gap1">
           <div class="smartgov">
             <span class="smart color-white">Smart</span><span class="gov
@@ -419,7 +430,7 @@
             Le programme SMARTGOV est une initiative de la Société d'Incubation
             Numérique du Gabon qui dans le cadre de sa mission principale qui
             est d'améliorer la compétitivité de l'économie Gabonaise souhaite
-            inclure dans ça démarche l'administration public qui joue un rôle
+            inclure dans sa démarche l'administration public qui joue un rôle
             primordial dans le développement de l'économie du Gabon et la
             qualité de vie des populations
           </span>
@@ -428,19 +439,19 @@
         <div class="flex flex-wrap flex2-start flex-wrap gap1 flex1-between">
           <div class="flex flex-column gap1">
             <div class="text-p10 text-upper">Documentation du programme</div>
-            <a href="#" class="color-white">Règlement du SmartGov</a>
-            <a href="#" class="color-white">Politique de confidentialité</a>
+            <a href="#" class="color-white">Règlement intérieur</a>
           </div>
-          
+
           <div class="flex flex-column gap1">
             <div class="text-p10 text-upper">Suivez nous sur les réseaux sociaux</div>
-            <a href="#"><img src="./assets/facebook.png" class="icon" alt=""></a>
+            <a href="https://www.facebook.com/singsagabon"><img src="./assets/facebook.png" class="icon" alt=""></a>
           </div>
         </div>
 
         <div class="pad1"></div>
-        <div class="text-align-center">Copyright 2022</div>
+        <div class="text-p text-align-center">Copyright &copy; 2022</div>
       </footer>
+      
     </main>
 
     <script src="./js/responsive.js"></script>
