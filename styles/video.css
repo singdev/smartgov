@@ -10,10 +10,10 @@
   z-index: -1;
 }
 
-@media (max-width: 750px) {
+/*@media (max-width: 750px) {
   #background-video { display: none; }
   body {
     background: url("https://images.unsplash.com/photo-1608982528344-38f3d906fc28?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1332&q=80") no-repeat;
     background-size: cover;
   }
-}
+}*/

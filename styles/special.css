@@ -6,3 +6,20 @@
   text-transform: uppercase;
   font-weight: 900;
 }
+
+.section-title {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  font-weight: 200;
+  gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: fit-content;
+}
+
+.section-title .divider {
+  width: 30%;
+  padding: 2px;
+}

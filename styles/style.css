@@ -8,12 +8,20 @@
   font-weight: 300;
 }
 
+.section {
+  background: linear-gradient(#000000a2, #00000094);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Header */
+
 .logo {
   width: 5rem;
 }
 
 header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,11 +35,10 @@ header nav a {
   font-size: 0.8em;
 }
 
+/* Welcome */
+
 .welcome-section {
   height: 100vh;
-  background: linear-gradient(#000000a2, #00000094);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .welcome-section .action-container .button {
@@ -45,4 +52,17 @@ header nav a {
   max-width: 900px;
   text-align: center;
   padding: 2rem;
+}
+
+/* About */
+
+.about-section .about {
+  width: 50%;
+  min-width: 300px;
+}
+
+@media (max-width: 750px) {
+  .about-section .about {
+    width: 100%;
+  }
 }

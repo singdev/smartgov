@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/video.css">
     <link rel="stylesheet" href="./styles/responsive.css">
-    
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -34,11 +34,12 @@
   </head>
   <body>
 
-    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+    <video id="background-video" autoplay loop muted
+      poster="https://assets.codepen.io/6093409/river.jpg">
       <source src="./assets/video1.mp4" type="video/mp4">
     </video>
-    
-    <header class="flex flex1-between flex2-center pad1 gap1 bg-trans">
+
+    <header class="flex flex1-between section flex2-center pad1 gap1 bg-trans">
       <img src="./assets/smartgov.png" alt="SMARTGOV" class="logo">
       <nav class="flex gap1">
         <button onclick="toggleMenu()" class="bg-trans color-white">
@@ -53,7 +54,7 @@
 
     <main>
       <!-- SECTION WELCOME -->
-      <div class="welcome-section flex flex-column flex1-center flex2-center
+      <div class="welcome-section section flex flex-column flex1-center flex2-center
         pad2 gap1">
         <div class="smartgov">
           <span class="smart color-white">Smart</span><span class="gov
@@ -73,6 +74,71 @@
             problématique</a>
         </div>
       </div>
+
+      <!-- SECTION ABOUT -->
+      <div class="about-section section flex flex-wrap">
+        <div class="about pad2 bg-white margin2">
+          <div class="section-title">
+            <span>A propos de SmartGov</span>
+            <div class="divider bg-black"></div>
+          </div>
+
+          <div class="margin2"></div>
+          <div class="margin2"></div>
+          
+          <div class="margin1">
+            <span class="text-p text-align-justify">
+              Depuis 2012 le gouvernement gabonais à mis en place le programme
+              eGov. Ce programme qui est porté par l’Etat consiste à
+              informatiser l’administration, mettre en place l’infrastructure
+              numérique de base, former les utilisateurs aux nouveaux outils de
+              l’information et de la communication.
+            </span>
+
+            <div class="margin1"></div>
+
+            <span class="text-p text-align-justify">
+              Cette digialisation du pays a profité aux entreprises privées qui
+              ont pu développer de nouvelles solution permettant de facilité le
+              quotidien des populations et améliorer considérablement la vie des
+              gabonais. Cependant les services de l’administration on très peux
+              évolués, très peux de solution innovante sont développés
+              régulièrement pour améliorer la performances de nos
+              administration, la qualité des services aux usagers et la sécurité
+              des informations.
+            </span>
+
+            <div class="margin1"></div>
+
+            <span class="text-p text-align-justify">
+              Pour cela le programme SMARTGOV vient compléter le programme eGov
+              pour permettre la création de plus en plus de startup d’état,
+              c’est à dire, des startups développés par les fonctionnaires qui
+              comprennent mieux les problématiques de l’administration public
+              mais qui n’ont peux être pas les outils pour élaborer les
+              solutions innovantes qu’ils peuvent imaginer.
+            </span>
+
+            <div class="margin1"></div>
+
+            <span class="text-p text-align-justify">
+              Pour cela le programme SMARTGOV mets en place trois éléments:
+            </span>
+
+            <div class="margin1"></div>
+
+            <div class="flex flex1-evenly gap1 pad1">
+              <span class="text-p color-primary text-bold text-upper">MeetUp</span>
+               <span class="text-p color-primary text-bold text-upper">Hackathon</span>
+              <span class="text-p color-primary text-bold text-upper">Incubation</span>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="empty"></div>
+      </div>
+
     </main>
 
     <script src="./js/responsive.js"></script>
