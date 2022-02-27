@@ -93,3 +93,6 @@
 .shadow-white {
   box-shadow: -0.75px 0.5px 10px #ccc;
 }
+.border-color-secondary {
+  border-color: #ffd233;
+}

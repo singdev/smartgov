@@ -12,13 +12,16 @@
     <link rel="stylesheet" href="./styles/input.css">
     <link rel="stylesheet" href="./styles/text.css">
     <link rel="stylesheet" href="./styles/special.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
     <link rel="stylesheet" href="./styles/style.css">
-
+    <link rel="stylesheet" href="./styles/video.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+    
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet">
 
     <!-- Fontawesom -->
     <link rel="stylesheet"
@@ -27,11 +30,49 @@
       referrerpolicy="no-referrer" />
 
     <title>SmartGov | MeetUp - Hackathon - Incubation</title>
-    
+
   </head>
   <body>
 
+    <video id="background-video" autoplay loop muted poster="https://assets.codepen.io/6093409/river.jpg">
+      <source src="./assets/video1.mp4" type="video/mp4">
+    </video>
+    
+    <header class="flex flex1-between flex2-center pad1 gap1 bg-trans">
+      <img src="./assets/smartgov.png" alt="SMARTGOV" class="logo">
+      <nav class="flex gap1">
+        <button onclick="toggleMenu()" class="bg-trans color-white">
+          <i class="fa-solid fa-bars text-p12"></i>
+        </button>
+        <a href="#">A propos</a>
+        <a href="#">Le programme</a>
+        <a href="#">Les étapes</a>
+        <a href="#">Documentation</a>
+      </nav>
+    </header>
+
     <main>
+      <!-- SECTION WELCOME -->
+      <div class="welcome-section flex flex-column flex1-center flex2-center
+        pad2 gap1">
+        <div class="smartgov">
+          <span class="smart color-white">Smart</span><span class="gov
+            color-primary">Gov</span>
+        </div>
+        <span class="text-p color-white text-bold text-upper">MeetUp - Hackathon
+          - Incubation</span>
+        <span class="description">Rendre l'administration intelligente pour
+          ameliorer
+          le service public grâce à la participation et la collaboration des
+          acteurs pour régler les problématiques nationales par le numérique</span>
+        <div class="flex gap1 action-container flex-wrap flex1-center
+          flex2-center">
+          <a href="#" class="button curve-button border-color-secondary
+            shadow-black bg-secondary color-black">Soumettre un projet</a>
+          <a href="#" class="button curve-button outline-button">Soumettre une
+            problématique</a>
+        </div>
+      </div>
     </main>
 
     <script src="./js/responsive.js"></script>

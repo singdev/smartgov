@@ -60,3 +60,11 @@ a {
 .divider-secondary  {
   border-top: 1px solid #F2AF36; 
  }
+ 
+ .text-bold {
+   font-weight: bold;
+ }
+ 
+ .text-upper {
+   text-transform: uppercase;
+ }

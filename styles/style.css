@@ -4,13 +4,45 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
-}
-
-body {
-  font-family: Verdana, sans-serif;
-  margin: 0;
+  line-height: 1.5em;
+  font-weight: 300;
 }
 
 .logo {
-  width: 4rem;
+  width: 5rem;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+header nav a {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 200;
+  font-size: 0.8em;
+}
+
+.welcome-section {
+  height: 100vh;
+  background: linear-gradient(#000000a2, #00000094);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.welcome-section .action-container .button {
+  min-width: 250px;
+}
+
+.welcome-section .description {
+  font-weight: 200;
+  color: white;
+  font-size: 1.2em;
+  max-width: 900px;
+  text-align: center;
+  padding: 2rem;
 }
