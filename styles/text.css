@@ -1,6 +1,5 @@
 .text-p {
   font-size: 14px;
-  display: inline-block;
 }
 
 .text-p12 {
@@ -70,3 +69,10 @@ a {
    text-transform: uppercase;
  }
  
+ li {
+   font-size: 12px;
+ }
+ 
+ li strong {
+   font-weight: bold;
+ }

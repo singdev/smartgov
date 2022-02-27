@@ -96,3 +96,19 @@
 .border-color-secondary {
   border-color: #ffd233;
 }
+
+.border-color-accent {
+  border-color: #00bfa6;
+}
+
+.bg-ligth1 {
+  background: #ffd33344;
+}
+
+.bg-ligth3 {
+  background: #5eabd644;
+}
+
+.bg-ligth2 {
+  background: #c4c4c444;
+}
