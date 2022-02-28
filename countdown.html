@@ -1,97 +1,26 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartGov | Countdown</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
       rel="stylesheet">
 
-      <title>SmartGov | Countdown</title>
     <link rel="icon" type="image/x-icon" href="./assets/smartgov.png">
-      
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        font-family: 'VT323', monospace;
-      }
-      
-      body {
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        gap: 2rem;
-        justify-content: center;
-        align-items: center;
-        background-color: black;
-        color: white;
-        padding: 1rem;
-      }
-      
-      h1 {
-        font-size: 3.0em;
-        text-align: center;
-      }
-      
-      p {
-        font-size: 10.0em;
-        color: green;
-        text-align: center;
-        margin: 1rem;
-        padding: 1rem;
-        border: 2px solid ghostwhite;
-      }
-      
-      @media (max-width: 750px) {
-        h1 {
-          font-size: 2.0em;
-        }
-        
-        p {
-          font-size: 4.0em;
-        }
-        
-      }
-</style>
+
+    <link rel="stylesheet" href="./styles/countdown.css">
   </head>
   <body>
-
     <main>
       <h1>Lancement officiel du site <strong>smartgov.ga</strong> dans:</h1>
       <p id="demo"></p>
     </main>
 
-    <script>
-var countDownDate = new Date("Feb 28, 2022 17:20:00").getTime();
-
-var x = setInterval(function() {
-
-  var now = new Date().getTime();
-    
-  var distance = countDownDate - now;
-    
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-    
-  document.getElementById("demo").innerHTML = (days > 0 ? days + " Jours " : "") +  (hours > 0 ? hours + ":" : "") + (minutes < 10 ? "0" : "") + minutes + ":" +  (seconds < 10 ? "0" : "") + seconds + " ";
-  if(minutes == 0 && hours == 0){
-    document.getElementById("demo").style.color = "red";
-  }
-  
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("demo").innerHTML = "EXPIRED";
-    window.location.href = "https://smartgov.ga"
-  }
-}, 1000);
-</script>
+    <script src="./js/countdown.js"></script>
   </body>
 </html>
